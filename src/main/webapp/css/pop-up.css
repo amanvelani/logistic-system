@@ -1,0 +1,71 @@
+@charset "ISO-8859-1";body {
+    background: #000
+}
+
+.card {
+	width: 1000px;
+    border: none;
+    height: 400px;
+    display: block;
+	align-items: center;
+	justify-content: center;
+	margin-left: 150px;
+    z-index: 9;
+}
+.form-popup {
+    display: none;
+    z-index: 100;
+    width: 750px;
+    align-items: center;
+	justify-content: center;
+	margin-left: 350px;
+    border: none;
+    height: 600px;
+  }
+.forms-inputs {
+    position: relative;
+}
+
+.forms-inputs span {
+    position: absolute;
+    top: -18px;
+    left: 30px;
+    background-color: #fff;
+    padding: 5px 10px;
+    font-size: 15px
+}
+
+.forms-inputs input {
+    margin-left: 50px;
+    height: 50px;
+    width: 850px;
+    border: 2px solid #eee
+}
+
+.forms-inputs select {
+    margin-left: 50px;
+
+    height: 50px;
+    width: 850px;
+    border: 2px solid #eee
+}
+
+.forms-inputs input:focus {
+    box-shadow: none;
+    outline: none;
+    border: 2px solid #000
+}
+
+.btn {
+    height: 50px;
+  
+}
+
+.success-data {
+    display: none;
+    flex-direction: column
+}
+
+.bxs-badge-check {
+    font-size: 90px
+}

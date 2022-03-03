@@ -1,0 +1,40 @@
+html,
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: azure;
+}
+
+div {
+  width: 49.7%;
+  height: 50%;
+  float: left;
+  border:1px solid black;
+}
+
+#div1 h1{
+    padding-left: 250px;
+}
+form{
+    padding-left: 100px;
+}
+h1{
+    padding-left: 250px;
+ 
+}
+#div2 {
+
+}
+
+#div3 {
+}
+
+#div4 {
+  
+}
+
+input[type=submit] {
+    width: 50em;  height: 50px;
+        
+}

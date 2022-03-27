@@ -3,13 +3,12 @@
 }
 
 .card {
-	width: 1000px;
+	width: 100%;
     border: none;
     height: 400px;
     display: block;
 	align-items: center;
 	justify-content: center;
-	margin-left: 150px;
     z-index: 9;
 }
 .form-popup {
@@ -23,6 +22,7 @@
     height: 600px;
   }
 .forms-inputs {
+    display:block;
     position: relative;
 }
 
@@ -32,21 +32,20 @@
     left: 30px;
     background-color: #fff;
     padding: 5px 10px;
-    font-size: 15px
+    font-size: 15px;
+    width:100%;
 }
 
 .forms-inputs input {
-    margin-left: 50px;
     height: 50px;
-    width: 850px;
+    width: 100%;
     border: 2px solid #eee
 }
 
 .forms-inputs select {
-    margin-left: 50px;
 
     height: 50px;
-    width: 850px;
+    width: 100%;
     border: 2px solid #eee
 }
 
@@ -68,4 +67,16 @@
 
 .bxs-badge-check {
     font-size: 90px
+}
+
+@media (min-width:320px)and(max-width: 970px){
+    .card{
+        width: 100%;
+    }
+    .forms-inputs input {
+        width: 100%;
+    }
+    .forms-inputs select {
+        width:100%;
+    }
 }

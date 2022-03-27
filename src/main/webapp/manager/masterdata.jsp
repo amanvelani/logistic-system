@@ -9,13 +9,19 @@
 <body>
 <div class="container mb-3 mt-3">
 <table class="table table-striped table-bordered mydatatable" style="width: 100%">
-  <thead>
+  <thead style="color:white">
+  <%
+  String meta = (String)request.getAttribute("metaData");
+  String s2[] = new String[10];
+  s2 = meta.split(",");
+  %>
     <tr>
-      <th>Id</th>
-      <th>Name</th>
-      <th>Username</th>
-       <th>Username</th>
-        <th>Username</th>
+    <%
+      for(int x= 0; x<s2.length;x++){
+      %>
+
+        <th><%out.print(s2[x]);%></th>
+       <%}%>
     </tr>
   </thead>
 <tbody>

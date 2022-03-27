@@ -7,21 +7,29 @@
 <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
 <link href="/css/showUser_bootstrap.css" rel="stylesheet" type="text/css" />
 <link href="/css/showUser.css" rel="stylesheet" type="text/css" />
-<link href="/css/sidebar.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <meta charset="ISO-8859-1">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/datetime/1.1.2/css/dataTables.dateTime.min.css">
 
  <script> 
+   $(function(){
+      $("#sideNav").load("/Nav/sideNav.html"); 
+    });
     $(function(){
-      $("#sideNav").load("sideNav.html"); 
+      $("#top").load("/Nav/topbar.html"); 
     });
     </script> 
 </head>
-<div id="sideNav"></div>
 <body style="background-color: white;">
-<div class="container mb-3 mt-3" style="margin-left:230px">
+<div class="wrapper">
+<div id="sideNav"></div><div id="content">
+    <div id="top"></div>
+    <h1>Users</h1>
+
+<div class="container mb-3 mt-3 table-responsive">
 <table class="table table-striped table-bordered mydatatable" style="width: 100%">
   <thead style="color:white">
     <tr>
@@ -103,6 +111,9 @@ for(int i=0; i<jsp.length;i++){
 </tbody>
 </table>
 </div>
+</div>
+</div>
+
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script sre="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>

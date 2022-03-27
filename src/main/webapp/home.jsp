@@ -29,25 +29,14 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav ml-auto">
+                    
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#about">About</a>
+                        <a class="nav-link page-scroll" href="/login">Login</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="user/welcome">Users</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="/admin/">Admin</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="manager/showUser">Manager</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="github">Github</a>
+                        <a class="nav-link page-scroll" href="github">Logout</a>
                     </li>
                 </ul>
-                <form class="form-inline">
-                    <p class="mb-0 mx-3"><a class="page-scroll font-weight-bold" href="#contact">Work with us</a></p>
-                </form>
             </div>
         </nav>
 
